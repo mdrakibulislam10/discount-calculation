@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>discount calculation</title>
+    <!-- bs stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center my-5 text-info">Discount Calculator!!!</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-evenly gap-4">
+                <!-- discount with only click the button -->
+                <div class="bg-warning p-4 rounded w-100">
+                    <p class="fs-2">Price: <span id="first-product-price">1000</span></p>
+                    <button id="first-apply-btn" type="button" class="btn btn-primary px-4 fw-bold my-4">Apply</button>
+                    <h3>Please pay: <span class="text-success" id="first-new-price"></span></h3>
+                </div>
+
+                <!-- discount with coupon code -->
+                <div class="bg-danger p-4 rounded w-100">
+                    <p class="fs-2">Price: <span id="second-product-price">1000</span></p>
+                    <input type="text" class="d-block rounded p-2 w-50" name="" value="DISC30" id="input-field">
+                    <button id="second-apply-btn" type="button" class="btn btn-primary px-4 fw-bold my-4">Apply</button>
+                    <h3>Please pay: <span class="text-success" id="second-new-price"></span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js file -->
+    <script src="js/utilities.js"></script>
+    <script src="js/discount.js"></script>
+    <script src="js/discount-coupon.js"></script>
+    <!-- bs js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
